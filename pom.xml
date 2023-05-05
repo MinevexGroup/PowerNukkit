@@ -88,41 +88,22 @@
 
     <distributionManagement>
         <repository>
-            <id>gomme-releases</id>
-            <url>https://repo.gomme.dev/repository/releases/</url>
+            <id>powernukkit-releases</id>
+            <name>powernukkit-releases</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
         <snapshotRepository>
-            <id>gomme-snapshots</id>
-            <url>https://repo.gomme.dev/repository/snapshots/</url>
+            <id>powernukkit-snapshots</id>
+            <name>powernukkit-snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
-
-    <repositories>
-        <repository>
-            <id>DaPorkchop_</id>
-            <url>https://maven.daporkchop.net/</url>
-        </repository>
-        <repository>
-            <id>opencollab-releases</id>
-            <url>https://repo.opencollab.dev/maven-releases/</url>
-        </repository>
-        <repository>
-            <id>opencollab-repo-snapshot</id>
-            <url>https://repo.opencollab.dev/maven-snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
     <dependencies>
         <dependency>
             <groupId>org.powernukkit.bedrock.network</groupId>
             <artifactId>raknet</artifactId>
-            <version>1.6.28-GHD-PN.3</version>
+            <version>1.6.28-PN.5-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
